@@ -1,8 +1,9 @@
 // It's a func that perform memoaization technique
 import { createSelector } from "reselect";
+import { CartState } from "./cart.reducer";
 
 // Gitting the state of the Cart Reducer throw Redux system
-const selectCartReducerState = (state) => state.cart;
+const selectCartReducerState = (state): CartState => state.cart;
 
 // createSelector first param is the input for the last param
 // There can be multible params, if 5 then 4 are inputs for the last which must be func
